@@ -564,7 +564,7 @@ def new_student_action():
     entry_name.delete(0, tk.END); entry_id.delete(0, tk.END); entry_age.delete(0, tk.END)
     gender_var.set("Male"); dept_var.set("-- Select Faculty --"); programme_var.set("-- Select Programme --"); semester_var.set("-- Select Semester --")
     module_listbox.selection_clear(0, tk.END); current_module_scores.clear()
-    output_box.deleted(1.0, tk.END)
+    output_box.delete(1.0, tk.END)
     entry_name.focus()
 
 # Clear Form: clears the report DISPLAY only (output area), does NOT delete saved records
